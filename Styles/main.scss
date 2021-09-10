@@ -6,7 +6,13 @@
   background-color: tan;
   // #4
   h1 {
-    color: #ddd
+    color: #ddd;
+
+    // BONUS #1
+    &:hover {
+      text-decoration: line-through;
+      @extend %center;
+    }
   }
   
   // #7
@@ -28,6 +34,7 @@
   // 9
   h1 {
     text-decoration: line-through;
+    margin-bottom: 100px;
   }
 
   // 10
