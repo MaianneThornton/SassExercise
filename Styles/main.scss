@@ -13,14 +13,22 @@
       text-decoration: line-through;
       @extend %center;
     }
+    // BONUS 3
+    @include flex (flex-start, center);
+    
   }
   
   // #7
   h2 {
     background-color: $brown1;
+
+    // BONUS 3
+    @include flex (center, center);
   }
   h3 {
     color:  $brown1;
+    // BONUS 3
+    @include flex (flex-end, center);
   }
 }
 
@@ -34,7 +42,9 @@
   // 9
   h1 {
     text-decoration: line-through;
-    margin-bottom: 100px;
+
+    // BONUS 2
+    
   }
 
   // 10
