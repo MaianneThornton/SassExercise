@@ -4,7 +4,7 @@
 // #2
 .main {
   background-color: tan;
-  // #4
+  // #3
   h1 {
     color: #ddd;
 
@@ -13,23 +13,22 @@
       @extend %center; 
       text-decoration: underline;
     }
-
-    // BONUS 3
-    @include flex (flex-start, center);
-    
   }
   
   // #7
   h2 {
     background-color: $brown1;
-
-    // BONUS 3
-    @include flex (center, center);
   }
+  
+  // #7
   h3 {
     color:  $brown1;
-    // BONUS 3
-    @include flex (flex-end, center);
+  }
+
+  // BONUS 3
+  @include flex(space-between, center);
+  h4 {
+    display: none;
   }
 }
 
